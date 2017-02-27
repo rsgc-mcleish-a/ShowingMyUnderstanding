@@ -28,14 +28,32 @@ import PlaygroundSupport
 let canvas = Canvas(width: 300, height: 300)
 
 // Generate a random number
-let number = random(from: 0, toButNotIncluding: 2)
+let number = random(from: 0, toButNotIncluding: 4)
 
+// Drawing a shape without a fill
 if number == 0 {
     canvas.drawShapesWithFill = false
-} else {
+}
+
+// Drawing a shape with a fill
+if number == 1{
     canvas.drawShapesWithFill = true
 }
 
+// Drawing a orange shape
+if number == 2{
+    canvas.drawShapesWithFill = true
+    canvas.fillColor = Color.orange
+}
+
+//Drawing a blue shape
+if number == 3{
+    canvas.drawShapesWithBorders = false
+    canvas.drawShapesWithFill = true
+    canvas.fillColor = Color.blue
+}
+
+//Drawing the ellipse
 canvas.drawEllipse(centreX: 150, centreY: 150, width: 25, height: 25)
 
 
