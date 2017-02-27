@@ -39,9 +39,12 @@ canvas.drawEllipse(centreX: 110, centreY: 200, width: 20, height: 20)
 
 //Mouth color
 canvas.fillColor = Color.red
+canvas.drawShapesWithBorders = false
 
 //Drawing Mouth
-canvas.drawEllipse(centreX: <#T##Int#>, centreY: <#T##Int#>, width: <#T##Int#>, height: <#T##Int#>)
+for x in stride(from: 75, through: 225, by: 25){
+        canvas.drawEllipse(centreX: x, centreY: 100, width: 60, height: 60)
+}
 
 /*:
  ## Template code
