@@ -23,7 +23,25 @@ import PlaygroundSupport
 // Create canvas
 let canvas = Canvas(width: 300, height: 300)
 
-// Replace this comment and add your code below...
+//Eyes colour
+canvas.fillColor = Color.blue
+
+//Drawing Eyes
+canvas.drawEllipse(centreX: 200, centreY: 225, width: 75, height: 75, borderWidth: 1)
+canvas.drawEllipse(centreX: 100, centreY: 225, width: 75, height: 75)
+
+//Pupels color
+canvas.fillColor = Color.orange
+
+//Drawing Pupels
+canvas.drawEllipse(centreX: 190, centreY: 200, width: 20, height: 20)
+canvas.drawEllipse(centreX: 110, centreY: 200, width: 20, height: 20)
+
+//Mouth color
+canvas.fillColor = Color.red
+
+//Drawing Mouth
+canvas.drawEllipse(centreX: <#T##Int#>, centreY: <#T##Int#>, width: <#T##Int#>, height: <#T##Int#>)
 
 /*:
  ## Template code
